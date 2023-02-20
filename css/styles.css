@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+}
+label {
+  font-size: 17px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  border: 1px black solid;
+  box-sizing: border-box;
+}
+
+button:hover {
+  border: 1px grey solid;
+}
+
+.login-form {
+  width: 30%;
+  margin: auto;
+  padding: 10px 15px;
+  border: 1px black solid;
+  border-radius: 8px;
+}
+
+.form-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  outline: none;
+  border: 1px black solid;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.form-control:hover {
+  border: grey 1px solid;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
