@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HTML Login Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <form action="http://localhost/Web/login.php" method="post">
-      <div class="login-form">
-        <h1>LOGIN FORM</h1>
+    <div class="login-form">
+      <form action="http://localhost/Web/login.php" method="get">
+        <h1>LOGIN</h1>
         <div class="form-group">
           <label for="username">Username</label>
           <input
@@ -31,10 +31,21 @@
             placeholder="Enter your password"
           />
         </div>
-        <button id="submit-button" type="submit">Submit</button>
-      </div>
-    </form>
+        <div class="form-group">
+          <label for="remember" id = "remember-label">Remember me</label>
+          <input
+            type="checkbox"
+            name="remember"
+            id="remember"
+          />
+        </div>
+        <div class="error-message"></div>
+        <button id="submit-button" type="submit" onclick="return formCheck()">
+          Submit
+        </button>
+      </form>
+    </div>
 
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
